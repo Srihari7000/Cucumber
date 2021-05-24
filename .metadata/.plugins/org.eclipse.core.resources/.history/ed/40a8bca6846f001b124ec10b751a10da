@@ -1,0 +1,29 @@
+package org.emp;
+
+public class Employee {
+	public static void main(String[] args) {
+		
+	
+
+	 int ID= 234;
+	
+	 
+	 String empPhone = "9094766357";
+	 String Email = "srihariarunachalam@gmail.com";
+	 
+	 public void empName() {
+		 
+	 String empName="srihari";
+		 System.out.println("empname =" +empName);
+	 }
+	 public void Dob () {
+		 
+		 String  Dob = "5.10.1995";
+		 System.out.println("Dob ="+ Dob);
+	 }
+}
+	
+
+
+ 	
+

@@ -1,0 +1,16 @@
+package com.selinium.basic;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+
+public class Adactin extends BaseClass {
+public static WebDriver driver;
+public static void main(String[] args) {
+	driver= browserlaunch("chrome");
+	geturl("https://adactinhotelapp.com/index.php");
+	inputelement(driver.findElement(By.id("username")),"srihariarun");
+	inputelement(driver.findElement(By.id("password")), "12345678");
+	clickon(driver.findElement(By.id("login")));
+	dropdown(driver.findElement(By.id("location")), "text", "Melbourne");
+}
+}

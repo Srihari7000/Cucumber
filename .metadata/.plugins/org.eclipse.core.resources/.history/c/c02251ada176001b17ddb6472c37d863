@@ -1,0 +1,9 @@
+
+
+public class day1selenium {
+	public static void main(String[] args) {
+		System.setProperty("webdriver.chrome.driver","D:\\New\\Selenium\\Driver\\chromedriver.exe");
+		WebDriver driver = new ChromeDriver();
+		driver.get("http://tnba.co/ranking.aspx");
+	}
+}

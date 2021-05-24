@@ -1,0 +1,21 @@
+package com.selinium.basic;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.server.handler.ImplicitlyWait;
+
+public class BaseClass {
+public static WebDriver driver;
+ public static void browserLaunch(String browser ) {
+	if (browser.equalsIgnoreCase("chrome")) {
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.manage().window().maximize();
+		driver.manage().timeouts().implicitlyWait(3000, TimeUnit.SECONDS);
+		
+		
+	}
+}
+}

@@ -1,0 +1,16 @@
+package com.selinium.basic;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class BaseClass {
+public static WebDriver driver;
+ public static void browserLaunch(String browser ) {
+	if (browser.equalsIgnoreCase("chrome")) {
+		System.setProperty("webdriver.chrome.driver",System.getProperty("user.dir")+"\\Drivers\\\\chromedriver.exe");
+		driver = new ChromeDriver();
+		
+		
+	}
+}
+}

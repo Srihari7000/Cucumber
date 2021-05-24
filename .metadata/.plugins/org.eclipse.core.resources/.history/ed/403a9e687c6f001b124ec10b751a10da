@@ -1,0 +1,29 @@
+package org.emp;
+
+public class Employee {
+	private static final int DOB = 0;
+	static void Emp_ID() {
+		int ID = 789;
+		
+	}
+public static void Emp_name() {
+	String s="Hari";
+}
+	
+ public static void Emp_dob() {
+	 String DOB = "5.10.1995";
+	
+ }
+public static void main (String[] args){
+	Emp_ID();
+	Emp_name();
+	Emp_dob();
+	int s;
+	int ID;
+	System.out.println(s + DOB+ID);
+}
+
+
+}
+
+

@@ -1,0 +1,34 @@
+package com.selinium.basic;
+
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Browser_launch {
+public static void main(String[] args) throws InterruptedException  {
+	System.setProperty("webdriver.chrome.driver","D:\\New\\Selinium2\\Drivers\\chromedriver.exe");
+	WebDriver driver = new ChromeDriver();
+	driver.get("https://www.youtube.com/");
+	driver.manage().window().maximize();
+	
+	WebElement search = driver.findElement(By.id("search"));
+
+	search.sendKeys("srihari badminton");
+	Thread.sleep(2000);
+	WebElement click = driver.findElement(By.id("search-icon-legacy"));
+	click.click();
+	
+	
+	WebElement click2 = driver.findElement(By.id("meta"));
+	click2.click();
+	Thread.sleep(2000);
+	WebElement click3 = driver.findElement(By.className("ytp-fullscreen-button ytp-button"));
+	click3.click();
+     Thread.sleep(30000);
+	
+	
+}
+}
